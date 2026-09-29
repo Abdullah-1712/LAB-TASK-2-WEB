@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive E-Commerce Product Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Roboto,Arial;background:#f5f7fa}
+    header{background:#172554;color:white;padding:18px}
+    nav a{color:white;text-decoration:none;margin:10px}
+    .banner{padding:50px;background-image:linear-gradient(90deg,rgba(20,40,100,.85),rgba(20,120,140,.5)),url('banner.svg');background-size:cover;color:white;text-align:center}
+    .layout{display:flex;gap:20px;padding:25px}
+    aside{width:220px;background:white;padding:20px;border-radius:10px}
+    aside ul{list-style-type:square;padding-left:20px}
+    .products{flex:1;text-align:center}
+    .product{display:inline-block;vertical-align:top;width:29%;min-width:220px;background:white;margin:10px;padding:15px;border:1px solid #ddd;border-radius:12px;position:relative}
+    .product img{width:100%;height:150px;opacity:.8}
+    .tag{position:absolute;top:20px;right:20px;background:#dc2626;color:white;padding:6px;z-index:2}
+    footer{background:#172554;color:white;text-align:center;padding:20px}
+    @media(max-width:700px){.layout{display:block}aside{width:100%;margin-bottom:15px}.product{width:90%}}
+    @media(min-width:701px) and (max-width:1000px){.product{width:44%}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>GadgetZone</h1>
+  <nav><a href="#">Home</a><a href="#">Products</a><a href="#">Categories</a><a href="#">Offers</a><a href="#">Contact</a></nav>
+</header>
+
+<section class="banner">
+  <h2>Smart Products, Simple Shopping</h2>
+  <p>Explore our latest collection.</p>
+</section>
+
+<div class="layout">
+<aside>
+  <h2>Categories</h2>
+  <ul><li>Mobile Accessories</li><li>Computers</li><li>Audio</li><li>Smart Home</li></ul>
+</aside>
+
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product"><span class="tag">New</span><img src="p1.svg"><h3>Wireless Mouse</h3><p>Rs. 1,999</p></div>
+  <div class="product"><span class="tag">Sale</span><img src="p2.svg"><h3>Bluetooth Speaker</h3><p>Rs. 3,499</p></div>
+  <div class="product"><span class="tag">New</span><img src="p3.svg"><h3>USB-C Hub</h3><p>Rs. 2,299</p></div>
+  <div class="product"><span class="tag">Sale</span><img src="p4.svg"><h3>Keyboard</h3><p>Rs. 2,799</p></div>
+  <div class="product"><span class="tag">New</span><img src="p5.svg"><h3>Power Bank</h3><p>Rs. 4,199</p></div>
+  <div class="product"><span class="tag">Hot</span><img src="p6.svg"><h3>Smart Watch</h3><p>Rs. 6,999</p></div>
+</section>
+</div>
+
+<footer><p>&copy; 2026 GadgetZone - All Rights Reserved</p></footer>
+</body>
+</html>

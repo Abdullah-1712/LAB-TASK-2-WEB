@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Educational Portal Dashboard</title>
+  <style>
+    body{font-family:Arial;background:#f4f8fc;margin:0;padding:25px}
+    .panel{background:white;padding:20px;margin:20px auto;max-width:850px;border-radius:12px}
+    iframe{display:block;margin:auto;border:3px solid #444}
+    input,textarea{margin:8px 0;padding:9px}
+    textarea{width:95%}
+    .inline{color:#c0392b;font-weight:bold}
+  </style>
+</head>
+<body>
+<h1>Educational Portal Dashboard</h1>
+
+<div class="panel">
+  <h2>Virtual Campus Map</h2>
+  <iframe align="center" frameborder="1" width="700" height="350"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=73.02%2C33.66%2C73.08%2C33.72&layer=mapnik">
+  </iframe>
+</div>
+
+<div class="panel">
+  <h2>Assignment Submission</h2>
+  <form>
+    <label>Upload Assignment:</label><br>
+    <input type="file" accept=".pdf,.docx,.pptx"><br>
+    <label>Instructions / Comments:</label><br>
+    <textarea rows="7">Please upload your completed assignment and add any important comments here.</textarea><br>
+    <button type="submit">Submit Assignment</button>
+    <button type="reset">Reset</button>
+  </form>
+</div>
+
+<div class="panel">
+  <h2>Block vs Inline Demo</h2>
+  <div style="background:#d9edf7;padding:12px;">This DIV is a block-level element.</div>
+  <p>This paragraph is also block-level and contains an <span class="inline">inline SPAN</span> element.</p>
+</div>
+</body>
+</html>

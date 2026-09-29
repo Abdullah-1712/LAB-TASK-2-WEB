@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Media Creator Showcase</title>
+  <style>
+    body{font-family:Arial;background:#f3f0ff;padding:25px}
+    .box{background:white;padding:20px;margin:20px auto;max-width:800px;border-radius:12px}
+    iframe{border:2px solid #555}
+  </style>
+</head>
+<body>
+<h1>Digital Media Creator Personal Showcase</h1>
+
+<div class="box">
+  <h2>Featured Video</h2>
+  <video controls loop muted width="640" height="360"
+         poster="poster.svg">
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="box">
+  <h2>Featured Audio</h2>
+  <audio controls autoplay loop>
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="box">
+  <h2>External Page / Map</h2>
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=74.30%2C31.48%2C74.38%2C31.54&layer=mapnik"
+    width="640" height="360">
+  </iframe>
+</div>
+</body>
+</html>

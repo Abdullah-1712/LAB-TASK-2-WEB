@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Portal</title>
+  <style>
+    body{font-family:Arial;background:#eef5ff;padding:25px}
+    form{max-width:650px;margin:auto;background:white;padding:25px;border-radius:12px}
+    input,select,textarea{width:100%;padding:9px;margin:6px 0 14px;box-sizing:border-box}
+    .radio{width:auto}
+    button{padding:10px 18px;margin-right:8px}
+  </style>
+</head>
+<body>
+<h1>BrightTech Job Application Portal</h1>
+<form>
+  <label>Applicant Name:</label><input type="text" name="name" required>
+  <label>Email:</label><input type="email" name="email" required>
+  <label>Phone:</label><input type="tel" name="phone">
+  <label>Password:</label><input type="password" name="password" required>
+
+  <label>Gender:</label><br>
+  <input class="radio" type="radio" name="gender" value="Male"> Male
+  <input class="radio" type="radio" name="gender" value="Female"> Female
+  <br><br>
+
+  <label>Qualification:</label>
+  <select name="qualification">
+    <option>Intermediate</option><option>Bachelor's</option><option>Master's</option>
+  </select>
+
+  <label>Job Position:</label>
+  <select name="position">
+    <option>Web Developer</option><option>UI Designer</option><option>Software Intern</option>
+  </select>
+
+  <label>City:</label>
+  <input list="cities" name="city">
+  <datalist id="cities">
+    <option value="Lahore"><option value="Islamabad"><option value="Multan"><option value="Faisalabad">
+  </datalist>
+
+  <label>Expected Salary:</label><input type="number" name="salary" min="0">
+  <label>Available Date:</label><input type="date" name="available">
+  <label>Upload CV:</label><input type="file" name="cv">
+  <label>Cover Letter:</label><textarea rows="6" placeholder="Write your cover letter here..."></textarea>
+
+  <button type="submit">Submit Application</button>
+  <button type="reset">Reset</button>
+</form>
+</body>
+</html>

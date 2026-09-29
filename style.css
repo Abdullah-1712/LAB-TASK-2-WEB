@@ -1,0 +1,8 @@
+body{margin:0;font-family:Arial;background:#eef7f6;color:#222}
+header{background:#164e63;color:white;padding:30px;text-align:center}
+nav{background:#0f766e;padding:15px;text-align:center}
+nav a{color:white;margin:0 15px;text-decoration:none}
+main{padding:25px;max-width:950px;margin:auto}
+.card{background:white;padding:18px;margin:15px 0;border-radius:10px;box-shadow:0 2px 7px #bbb}
+.highlight{background:#ffe08a;padding:3px}
+#myHeader h1{margin:0}

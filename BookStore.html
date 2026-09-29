@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Book Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial;background:#f5f5f5}
+    header{background:#263238;color:white;padding:20px}
+    nav a{color:white;margin:12px;text-decoration:none}
+    h1,h2,h3{font-family:'Lora',serif}
+    .books{padding:25px;text-align:center}
+    .book{display:inline-block;vertical-align:top;width:29%;min-width:230px;background:#fff4d6;margin:12px;padding:18px;border:2px solid #d6b656;border-radius:15px}
+    .book img{width:150px;height:190px;opacity:.82}
+    .best{background:#e8f5e9;padding:20px}
+    .best ol{list-style-type:upper-roman}
+    .offers{padding:35px;text-align:center;color:white;background:linear-gradient(120deg,#6a1b9a,#1565c0)}
+    @media(max-width:700px){.book{width:90%}nav a{display:block;margin:8px}}
+    @media(min-width:701px) and (max-width:900px){.book{width:44%}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>PageTurner Online Book Store</h1>
+  <nav>
+    <a href="#">Home</a><a href="#">Books</a><a href="#">Categories</a><a href="#">Offers</a><a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="books">
+  <h2>Featured Books</h2>
+  <div class="book"><h3>Atomic Habits</h3><p>Rs. 1,450</p><img src="book1.svg"></div>
+  <div class="book"><h3>The Alchemist</h3><p>Rs. 1,200</p><img src="book2.svg"></div>
+  <div class="book"><h3>Clean Code</h3><p>Rs. 2,100</p><img src="book3.svg"></div>
+</section>
+
+<section class="best">
+  <h2>Top 5 Best-Selling Books</h2>
+  <ol>
+    <li>Atomic Habits</li><li>The Alchemist</li><li>Clean Code</li><li>Deep Work</li><li>Rich Dad Poor Dad</li>
+  </ol>
+</section>
+
+<section class="offers">
+  <h2>Special Offers</h2>
+  <p>Save up to 30% on selected books this week!</p>
+  <img src="offer.svg" width="180" style="opacity:.55">
+</section>
+</body>
+</html>
